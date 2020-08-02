@@ -8,12 +8,16 @@ android {
 
     defaultConfig {
         applicationId "com.rizieq.mempo"
-        minSdkVersion 28
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    ext {
+        supportLibraryVersion = '24.2.0'
     }
 
     buildTypes {
@@ -29,46 +33,51 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.core:core-ktx:1.3.1'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-
-// Slider Layout
-
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-    implementation 'com.nineoldandroids:library:2.4.0'
-    implementation 'com.daimajia.slider:library:1.1.5@aar'
-
     // RxJava
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
     implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
 
-
-    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
-
-
-    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
-    implementation 'com.szagurskii:patternedtextwatcher:0.5.0'
-    implementation 'com.github.d-max:spots-dialog:0.7@aar'
-    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-
-
+//    Application Supports
     implementation 'android.arch.persistence.room:runtime:1.1.1'
     implementation 'android.arch.persistence.room:rxjava2:1.1.1'
     annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
-
-
-    implementation 'de.hdodenhof:circleimageview:3.0.0'
-
-    implementation 'com.github.mancj:MaterialSearchBar:+'
-
-    implementation 'com.karumi:dexter:5.0.0'
-
     implementation 'android.arch.lifecycle:extensions:1.1.1'
+
+//    Widgets
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation 'com.github.mancj:MaterialSearchBar:+'
     implementation 'com.jaredrummler:material-spinner:1.3.1'
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.szagurskii:patternedtextwatcher:0.5.0'
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+
+//    Image
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.airbnb.android:lottie:2.6.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+//   Networking
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
 }
