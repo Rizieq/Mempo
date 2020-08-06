@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< Updated upstream
         <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.LoginActivity" />
         <activity
@@ -16,6 +17,10 @@
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".activities.SplashscreenActivity" />
         <activity android:name=".activities.MainActivity">
+=======
+        <activity android:name=".activites.RegisterActivity"></activity>
+        <activity android:name=".MainActivity">
+>>>>>>> Stashed changes
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
